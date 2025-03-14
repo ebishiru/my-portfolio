@@ -8,7 +8,7 @@ const Home = ({content}) => {
         <>
             <TitleContainer>
                 <h2>Hello, <br/> I'm Kevin Lo</h2>
-                <StyledImg src="/assets/kevinPicture.jpg" alt="Picture of Kevin" />
+                <StyledImg src="/assets/kevin-picture.jpg" alt="Picture of Kevin" />
             </TitleContainer>
             {
                     foundPage.texts.map((text, index) => {
