@@ -2,7 +2,11 @@
 
 const Projects = () => {
     return (
-        <p>Project Test</p>
+        <>
+        <h2>Languages and Frameworks I'm familiar with:</h2>
+        <ul></ul>
+        <h2>Projects I've worked on:</h2>
+        </>
     )
 }
 

@@ -2,7 +2,14 @@
 
 const Contact = () => {
     return (
-        <p>Contact test</p>
+        <>
+            <h2>For all inquiries, please contact me through:</h2>
+            <ul>
+            </ul>
+            <h2>Or send me an email directly:</h2>
+            <form></form>
+        </>
+        
     )
 }
 
