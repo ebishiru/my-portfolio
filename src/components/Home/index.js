@@ -1,13 +1,22 @@
 import styled from "styled-components";
 
-const Home = () => {
+const Home = ({content}) => {
+    const foundPage = content.find((contentPage) => {
+        return contentPage.page === "Home";
+    })
     return (
         <>
             <TitleContainer>
                 <h2>Hello, <br/> I'm Kevin Lo</h2>
                 <StyledImg src="/assets/kevinPicture.jpg" alt="Picture of Kevin" />
             </TitleContainer>
-            <p>I'm a Full-Stack Developer in training with a passion for making dreams into reality.</p>
+            {
+                    foundPage.texts.map((text, index) => {
+                        return (
+                            <p key={index}>{text}</p>
+                        )
+                    })
+            }
         </>
 
     )
