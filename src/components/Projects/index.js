@@ -7,7 +7,10 @@ const Projects = () => {
         <>
         <h2>Languages & Frameworks</h2>
         <IconContainer>
-            <li><StyledIcon icon={faHtml5} style={{ color: "#E34F26" }}></StyledIcon></li>
+            <li>
+                <StyledIcon icon={faHtml5} style={{ color: "#E34F26" }}></StyledIcon>
+                <span>HTML5</span>
+            </li>
             <li><StyledIcon icon={faCss3} style={{ color: "#1572B6" }}></StyledIcon></li>
             <li><StyledIcon icon={faReact} style={{ color: "#61DAFB" }}></StyledIcon></li>
             <li><StyledIcon icon={faNodeJs} style={{ color: "#339933" }}></StyledIcon></li>
@@ -41,6 +44,10 @@ const ProjectContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    & p {
+        text-align: center;
+    }
 `
 const ProjectImg = styled.img`
     width: 200px;
@@ -48,9 +55,10 @@ const ProjectImg = styled.img`
     margin: 1.5rem;
     border: 2px solid var(--color2);
     transition: all 1s ease-in-out;
+    border-radius: 5%;
 
     &:hover {
-        transform: scale(1.3);
+        transform: scale(2);
         cursor: pointer;
     }
 `

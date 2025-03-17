@@ -12,23 +12,20 @@ const NavBar = () => {
     )
 }
 
-
 const NavBarContainer = styled.ol`
     display: flex;
     justify-content: flex-end;
-
     & li::marker {
         color: var(--color2);
     }
-
 `
 
 const StyledNavLink = styled(NavLink)`
     padding: 1rem;
     text-decoration: none;
     color: var(--color1);
-
-    &.active {
+    transition: all 0.5s ease-in-out;
+    &.active, &:hover {
         color: var(--color2);
     }
 `

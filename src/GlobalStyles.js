@@ -11,17 +11,23 @@ const GlobalStyles = createGlobalStyle`
 	}
 
 html {
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    margin: 0;
 }
 
 body {
-    min-height: 100vh;
-	min-width: 100vw;
+    min-height: 100%;
+	width: 100%;
     margin: 0;
     font-size: 1rem;
 	font-family: 'DM Sans', sans-serif;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    overflow: hidden;
     background: linear-gradient(
     60deg,
     hsl(225deg 59% 11%) 0%,
@@ -43,6 +49,12 @@ body {
     );
 }
 
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.5rem;
+    }
+}
+
 h1 {
     color: var(--color2);
 }
@@ -50,12 +62,23 @@ h1 {
 h2 {
     color: var(--color2);
     padding: 0 1rem;
+    max-width: 60ch;
+    margin: auto;
 }
 
 p {
     color: var(--color1);
-    padding: 0 1rem;
-    text-align: center;
+    padding: 0.5rem 1rem;
+    max-width: 60ch;
+    margin: auto;
+}
+
+span {
+    color: var(--color1)
+}
+
+* {
+    box-sizing: border-box;
 }
 
 `
