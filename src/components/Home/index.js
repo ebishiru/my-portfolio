@@ -7,7 +7,7 @@ const Home = ({content}) => {
     return (
         <>
             <TitleContainer>
-                <h2>Hello, <br/> I'm Kevin Lo</h2>
+                <h1>Hello, <br/> I'm Kevin Lo</h1>
                 <StyledImg src="/assets/kevin-picture.jpg" alt="Picture of Kevin" />
             </TitleContainer>
             {
@@ -17,6 +17,7 @@ const Home = ({content}) => {
                         )
                     })
             }
+            <p>Click the tabs above to learn more about me!</p>
         </>
 
     )

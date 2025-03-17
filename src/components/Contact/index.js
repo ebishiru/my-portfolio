@@ -3,10 +3,11 @@
 const Contact = () => {
     return (
         <>
-            <h2>For all inquiries, please contact me through:</h2>
+            <h2>Contact</h2>
+            <p>For all inquiries, please contact me through:</p>
             <ul>
             </ul>
-            <h2>Or send me an email directly:</h2>
+            <p>Or send me an email directly:</p>
             <form></form>
         </>
         

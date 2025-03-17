@@ -18,17 +18,18 @@ const NavBarContainer = styled.ol`
     justify-content: flex-end;
 
     & li::marker {
-        color: blue;
+        color: var(--color2);
     }
+
 `
 
 const StyledNavLink = styled(NavLink)`
     padding: 1rem;
     text-decoration: none;
-    color: black;
+    color: var(--color1);
 
     &.active {
-        color: blue;
+        color: var(--color2);
     }
 `
 export default NavBar
