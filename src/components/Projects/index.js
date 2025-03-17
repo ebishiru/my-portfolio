@@ -9,11 +9,20 @@ const Projects = () => {
         <IconContainer>
             <li>
                 <StyledIcon icon={faHtml5} style={{ color: "#E34F26" }}></StyledIcon>
-                <span>HTML5</span>
+                <span>Html</span>
             </li>
-            <li><StyledIcon icon={faCss3} style={{ color: "#1572B6" }}></StyledIcon></li>
-            <li><StyledIcon icon={faReact} style={{ color: "#61DAFB" }}></StyledIcon></li>
-            <li><StyledIcon icon={faNodeJs} style={{ color: "#339933" }}></StyledIcon></li>
+            <li>
+                <StyledIcon icon={faCss3} style={{ color: "#1572B6" }}></StyledIcon>
+                <span>Css</span>
+            </li>
+            <li>
+                <StyledIcon icon={faReact} style={{ color: "#61DAFB" }}></StyledIcon>
+                <span>React</span>
+            </li>
+            <li>
+                <StyledIcon icon={faNodeJs} style={{ color: "#339933" }}></StyledIcon>
+                <span>NodeJS</span>
+            </li>
         </IconContainer>
         <h2>Projects</h2>
         <ProjectContainer>
@@ -29,13 +38,39 @@ const IconContainer = styled.ul`
     justify-content: space-evenly;
     list-style-type: none;
     padding: 0 10vw;
+
+    & li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    & span {
+        opacity: 0;
+        font-size: 1rem;
+        transition: all 0.5s ease-in-out;
+
+        @media (min-width: 1024px) {
+        font-size: 1.5rem;
+    }
+    }
+
+    & li:hover span {
+        opacity: 1;
+    }
 `
 
 const StyledIcon = styled(FontAwesomeIcon)`
     font-size: 3rem;
+    transition: all 1s ease-in-out;
     
+    @media (min-width: 1024px) {
+        font-size: 4rem;
+    }
+
     &:hover {
-        opacity: 0.7;
+        transform: rotateY(360deg);
     }
 `
 
