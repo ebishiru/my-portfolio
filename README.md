@@ -2,6 +2,13 @@
 
 This is my first webdev porfolio.
 
+---
+
+Quick Link to deployed portfolio:
+[Kevin's Portfolio](https://ebishiru.github.io/my-portfolio/)
+
+---
+
 To start, I wanted my portfolio to be modern, clean and intuitive to use. I looked up several references but ended up deciding on a tech/futurecore kind of theme.
 
 To make it clean, I wanted each page to have its purpose.
