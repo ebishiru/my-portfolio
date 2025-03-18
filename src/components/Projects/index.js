@@ -90,7 +90,7 @@ const ProjectImg = styled.img`
     margin: 1.5rem;
     border: 2px solid var(--color2);
     transition: all 1s ease-in-out;
-    border-radius: 5%;
+    border-radius: 5px;
 
     &:hover {
         transform: scale(2);
