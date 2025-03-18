@@ -1,4 +1,4 @@
-
+import styled from "styled-components";
 
 const About = ({content}) => {
     const foundPage = content.find((contentPage) => {
@@ -14,8 +14,31 @@ const About = ({content}) => {
                     )
                 })
             }
+            <ImgContainer>
+                <StyledImg src="/assets/kevin-picture2.jpg" alt="Picture of Kevin in Japan" />
+            </ImgContainer>
         </>
     )
 }
+
+const ImgContainer = styled.div`
+    display: flex;
+    justify-content: flex-end;
+
+    @media (min-width: 640px) {
+        justify-content: center;
+    }
+`
+
+const StyledImg = styled.img`
+    width: 200px;
+    height: auto;
+    margin: 1rem;
+    border: 2px solid var(--color2);
+
+    @media (min-width: 1024px) {
+    width: 250px;
+    }
+`
 
 export default About
