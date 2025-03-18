@@ -38,6 +38,6 @@ I was debating on whether I should add the `form` field since a lot of messaging
 
 ---
 
-Thank you for reading!
+Thank you for reading!!
 
 -Kevin Lo
