@@ -15,7 +15,7 @@ const About = ({content}) => {
                 })
             }
             <ImgContainer>
-                <StyledImg src="/assets/kevin-picture2.jpg" alt="Picture of Kevin in Japan" />
+                <StyledImg src="/my-portfolio/assets/kevin-picture2.jpg" alt="Picture of Kevin in Japan" />
             </ImgContainer>
         </>
     )

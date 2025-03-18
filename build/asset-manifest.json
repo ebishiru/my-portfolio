@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/my-portfolio/static/js/main.c947ebab.js",
+    "index.html": "/my-portfolio/index.html",
+    "main.c947ebab.js.map": "/my-portfolio/static/js/main.c947ebab.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c947ebab.js"
+  ]
+}

@@ -26,7 +26,7 @@ const Projects = () => {
         </IconContainer>
         <h2>Projects</h2>
         <ProjectContainer>
-            <a href="https://github.com/ebishiru/project-js-nyan-cat" target="_blank"><ProjectImg src="/assets/nyan-cat-picture.jpg" alt='Picture of the game "I CAN HAZ CHEEZBURGER?!??"'/></a>
+            <a href="https://github.com/ebishiru/project-js-nyan-cat" target="_blank"><ProjectImg src="/my-portfolio/assets/nyan-cat-picture.jpg" alt='Picture of the game "I CAN HAZ CHEEZBURGER?!??"'/></a>
             <p>"I CAN HAZ CHEEZBURGER" <br/>(Space Invader Clone)</p>
         </ProjectContainer>
         </>

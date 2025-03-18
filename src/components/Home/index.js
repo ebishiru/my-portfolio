@@ -10,7 +10,7 @@ const Home = ({content}) => {
         <HomePageContent>
             <TitleContainer>
                 <h1>Hello, <br/> I'm Kevin Lo</h1>
-                <StyledImg src="/assets/kevin-picture.jpg" alt="Picture of Kevin" />
+                <StyledImg src="/my-portfolio/assets/kevin-picture.jpg" alt="Picture of Kevin" />
             </TitleContainer>
             {
                     foundPage.texts.map((text, index) => {
