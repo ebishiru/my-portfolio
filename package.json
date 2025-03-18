@@ -2,6 +2,7 @@
   "name": "my-portfolio",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://ebishiru.github.io/my-portfolio",
   "repository": "https://github.com/ebishiru/my-portfolio.git",
   "author": "Kevin Kar-Ho Lo <kevinkarholo@gmail.com>",
   "license": "MIT",
@@ -11,6 +12,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.3.0",
@@ -20,7 +22,9 @@
   "scripts": {
     "start": "react-scripts start",
     "start-mac": "PORT=3000 react-scripts start",
-    "start-windows": "set PORT=3000 && react-scripts start"
+    "start-windows": "set PORT=3000 && react-scripts start",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
