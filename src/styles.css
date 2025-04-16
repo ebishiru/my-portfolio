@@ -1,6 +1,7 @@
-import { createGlobalStyle } from "styled-components";
-
-const GlobalStyles = createGlobalStyle`
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 /* CSS RESET */
 
@@ -50,52 +51,22 @@ table {
 
 /* CSS RESET */ 
 
-:root {
-		--color1: #FFFFFF;
-		--color2: #5BC0BE;
-		--color3: #3A506B;
-        --color4: #1C2541;
-        --color5: #0B132B;
-	}
-
+:root{
+    --color-white: #F6F0ED;
+    --color-brown: #C2948A;
+	--color-blue: #7EA8BE;
+    --color-khaki: #BBB193;
+	--color-darkblue: #0D324D;
+}
 
 body {
-    font-size: 1rem;
-	font-family: 'DM Sans', sans-serif;
-    background-color: var(--color5);
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: var(--color-darkblue);
+	color: var(--color-white);
+    font-family: "Inter", sans-serif;
 }
 
-@media (min-width: 1024px) {
-    body {
-        font-size: 1.25rem;
-    }
+h1, h2, h3 {
+    font-family: "Space Grotesk", sans-serif;
 }
-
-h1 {
-    color: var(--color2);
-    font-size: 2.5rem;
-}
-
-h2 {
-    color: var(--color2);
-    padding: 0 1rem;
-    max-width: 60ch;
-    margin: 1rem auto;
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-p {
-    color: var(--color1);
-    padding: 0.75rem 1rem;
-    max-width: 60ch;
-    margin: auto;
-}
-
-span {
-    color: var(--color1)
-}
-
-`
-
-export default GlobalStyles

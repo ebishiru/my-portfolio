@@ -1,33 +1,30 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5, faCss3, faReact, faNodeJs } from "@fortawesome/free-brands-svg-icons";
 
 const Projects = () => {
     return (
         <>
-        <h2>Languages & Frameworks</h2>
+        <h2>Technologies</h2>
         <IconContainer>
-            <li>
-                <StyledIcon icon={faHtml5} style={{ color: "#E34F26" }}></StyledIcon>
-                <span>Html</span>
-            </li>
-            <li>
-                <StyledIcon icon={faCss3} style={{ color: "#1572B6" }}></StyledIcon>
-                <span>Css</span>
-            </li>
-            <li>
-                <StyledIcon icon={faReact} style={{ color: "#61DAFB" }}></StyledIcon>
-                <span>React</span>
-            </li>
-            <li>
-                <StyledIcon icon={faNodeJs} style={{ color: "#339933" }}></StyledIcon>
-                <span>NodeJS</span>
-            </li>
+            <li>React</li>
+            <li>Javascript</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Github</li>
+            <li>MongoDB</li>
+            <li>Vercel</li>
         </IconContainer>
         <h2>Projects</h2>
         <ProjectContainer>
             <a href="https://github.com/ebishiru/project-js-nyan-cat" target="_blank"><ProjectImg src="/my-portfolio/assets/nyan-cat-picture.jpg" alt='Picture of the game "I CAN HAZ CHEEZBURGER?!??"'/></a>
             <p>"I CAN HAZ CHEEZBURGER" <br/>(Space Invader Clone)</p>
+            <p><a href="https://github.com/ebishiru/project-js-nyan-cat">Github</a></p>
+        </ProjectContainer>
+        <ProjectContainer>
+            <a href="https://sylliegirlybeauty.vercel.app/" target="_blank"><ProjectImg src="/my-portfolio/assets/syllie_girly_beauty_picture.jpg" alt="Picture of Syllie Girly Beauty Webpage"/></a>
+            <p>"Syllie Girly Beauty" <br/>(MERN Full Stack Solo Webpage Project)</p>
+            <p><a href="https://github.com/ebishiru/sylliegirlybeauty" target="_blank">Github</a></p>
+            <p><a href="https://sylliegirlybeauty.vercel.app/" target="_blank">Live</a></p>
         </ProjectContainer>
         </>
     )
@@ -61,19 +58,6 @@ const IconContainer = styled.ul`
     }
 `
 
-const StyledIcon = styled(FontAwesomeIcon)`
-    font-size: 3rem;
-    transition: all 1s ease-in-out;
-    
-    @media (min-width: 1024px) {
-        font-size: 4rem;
-    }
-
-    &:hover {
-        transform: rotateY(360deg);
-    }
-`
-
 const ProjectContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -85,15 +69,15 @@ const ProjectContainer = styled.div`
     }
 `
 const ProjectImg = styled.img`
-    width: 200px;
-    height: auto;
+    height: 400px;
+    width: auto;
     margin: 1.5rem;
     border: 2px solid var(--color2);
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     border-radius: 5px;
 
     &:hover {
-        transform: scale(2);
+        transform: scale(1.2);
         cursor: pointer;
     }
 `

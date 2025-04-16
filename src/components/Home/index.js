@@ -2,23 +2,16 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const Home = ({content}) => {
-    const foundPage = content.find((contentPage) => {
-        return contentPage.page === "Home";
-    })
+const Home = () => {
     return (
         <HomePageContent>
             <TitleContainer>
                 <h1>Hello, <br/> I'm Kevin Lo</h1>
                 <StyledImg src="/my-portfolio/assets/kevin-picture.jpg" alt="Picture of Kevin" />
             </TitleContainer>
-            {
-                    foundPage.texts.map((text, index) => {
-                        return (
-                            <p key={index}>{text}</p>
-                        )
-                    })
-            }
+            <p>Full-Stack Developer with a passion for making dreams into reality.</p>
+            <p>I'm a problem-solver who loves finding smart, efficient solutions—whether it's in code, strategy games, or real life.
+                With an engineering background and a few years living in Japan, I’ve learned to adapt fast, think critically, and stay curious no matter the challenge.</p>
             <p>Click the <SpecialWord>tabs</SpecialWord> above to learn more about me!</p>
             <SocialsContainer>
                 <li><a href="https://github.com/ebishiru"><StyledIcon icon={faGithub}></StyledIcon></a></li>
@@ -30,8 +23,8 @@ const Home = ({content}) => {
 }
 
 const HomePageContent = styled.div`
-    margin: 18vh 0;
-
+    margin: 10rem 0;
+    height: 100%;
     & p {
         text-align: center;
     }
@@ -40,6 +33,7 @@ const HomePageContent = styled.div`
 const TitleContainer = styled.div`
     display: flex;
     justify-content: center;
+    align-items: center;
 `
 
 const StyledImg = styled.img`

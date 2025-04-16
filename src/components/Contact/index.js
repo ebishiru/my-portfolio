@@ -19,7 +19,7 @@ const Contact = () => {
     }
 
     return (
-        <>
+        <ContactPage>
             <h2>Contact</h2>
             <p>For all inquiries, please contact me through email</p>
             <MyEmail>kevinkarholo@gmail.com</MyEmail>
@@ -34,13 +34,15 @@ const Contact = () => {
                 <label>Message
                     <textarea value={visitorMessage} onChange={(ev)=>{setVisitorMessage(ev.target.value)}}></textarea>
                 </label>
-                <div>
-                    <SendButton type="submit" onClick={sendMail} disabled={!visitorName || !visitorEmail || !visitorMessage}>Send</SendButton>
-                </div>
+                <SendButton type="submit" onClick={sendMail} disabled={!visitorName || !visitorEmail || !visitorMessage}>Send</SendButton>
             </FormContainer>
-        </>
+        </ContactPage>
     )
 }
+
+const ContactPage = styled.div`
+    margin: 5rem 0;
+`
 
 const MyEmail = styled.p`
     color: var(--color2);
@@ -58,8 +60,8 @@ const MyEmail = styled.p`
 const FormContainer = styled.form`
     margin: auto;
     margin-top: 1rem;
-    max-width: 90%;
-    width: 600px;
+
+    width: 450px;
     color: var(--color2);
     display: flex;
     flex-direction: column;
@@ -68,28 +70,26 @@ const FormContainer = styled.form`
     & input, & textarea {
         display: block;
         opacity: 0.8;
-        margin: 0.5rem;
-        font-size: large;
-        width: 90%;
+        margin: 0.5rem 0;
+        width: 96%;
+        padding: 0.5rem;
+        border-radius: 5px;
     }
 
     & textarea {
         height: 8rem;
     }
 
-    & div {
-        text-align: center;
-    }
 `
 
 const SendButton = styled.button`
     color: var(--color5);
-    font-size: large;
+    font-size: medium;
     background-color: var(--color2);
     margin: auto;
     padding: 0.5rem 1rem;
     border: 2px solid var(--color4);
-    width: 100px;
+    border-radius: 10px;
 
     &:disabled {
         opacity: 0.5;
