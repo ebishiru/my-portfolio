@@ -92,10 +92,13 @@ p {
     margin: auto;
 }
 
-span {
+span, li {
     color: var(--color1)
 }
 
+a {
+    color: var(--color2);
+}
 `
 
 export default GlobalStyles
