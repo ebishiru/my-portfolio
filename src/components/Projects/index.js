@@ -1,18 +1,19 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { SiMongodb, SiExpress, SiVercel } from 'react-icons/si';
+import { FaReact, FaJs, FaNodeJs, FaGithub } from 'react-icons/fa';
 
 const Projects = () => {
     return (
         <>
         <h2>Technologies</h2>
         <IconContainer>
-            <li>React</li>
-            <li>Javascript</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>Github</li>
-            <li>MongoDB</li>
-            <li>Vercel</li>
+            <li><StyledFAIcon><a href="https://react.dev/" target="_blank"><FaReact /></a></StyledFAIcon>React</li>
+            <li><StyledFAIcon><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><FaJs /></a></StyledFAIcon>Javascript</li>
+            <li><StyledFAIcon><a href="https://nodejs.org/en" target="_blank"><FaNodeJs /></a></StyledFAIcon>Node.js</li>
+            <li><StyledRIIcon><a href="https://expressjs.com/" target="_blank"><SiExpress /></a></StyledRIIcon>Express.js</li>
+            <li><StyledFAIcon><a href="https://github.com/" target="_blank"><FaGithub /></a></StyledFAIcon>Github</li>
+            <li><StyledRIIcon><a href="https://www.mongodb.com/" target="_blank"><SiMongodb /></a></StyledRIIcon>MongoDB</li>
+            <li><StyledRIIcon><a href="https://vercel.com/" target="_blank"><SiVercel /></a></StyledRIIcon>Vercel</li>
         </IconContainer>
         <h2>Projects</h2>
         <ProjectContainer>
@@ -37,28 +38,24 @@ const Projects = () => {
 
 const IconContainer = styled.ul`
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     list-style-type: none;
-    padding: 0 10vw;
+    margin: 3rem auto;
+    max-width: 800px;
 
     & li {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.25rem;
+        color: var(--color1);
+        padding: 1rem;
+        gap: 0.5rem;
+        transition: all 2s;
     }
 
-    & span {
-        opacity: 0;
-        font-size: 1rem;
-        transition: all 0.5s ease-in-out;
-
-        @media (min-width: 1024px) {
-        font-size: 1.5rem;
-    }
-    }
-
-    & li:hover span {
+    & li:hover  {
+        transform: rotateY(360deg);
         opacity: 1;
     }
 `
@@ -81,10 +78,28 @@ const ProjectImg = styled.img`
     transition: all 0.5s ease-in-out;
     border-radius: 5px;
 
+    @media (max-width: 800px) {
+        width: 350px;
+        height: auto;
+    }
+
     &:hover {
         transform: scale(1.1);
         cursor: pointer;
     }
 `
+
+const StyledFAIcon = styled.div`
+    font-size: 2rem;
+    color: var(--color2);
+`;
+
+const StyledRIIcon = styled.div`
+    font-size: 2rem;
+    color: var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
 
 export default Projects

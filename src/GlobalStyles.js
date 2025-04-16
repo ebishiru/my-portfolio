@@ -92,7 +92,7 @@ p {
     margin: auto;
 }
 
-span, li {
+span {
     color: var(--color1)
 }
 

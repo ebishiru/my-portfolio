@@ -61,12 +61,15 @@ const FormContainer = styled.form`
     margin: auto;
     margin-top: 1rem;
 
-    width: 450px;
+    width: 500px;
     color: var(--color2);
     display: flex;
     flex-direction: column;
     gap: 10px;
 
+    @media (max-width: 550px) {
+        width: 350px;
+    }
     & input, & textarea {
         display: block;
         opacity: 0.8;
