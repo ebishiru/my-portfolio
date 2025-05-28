@@ -23,9 +23,9 @@ const Projects = () => {
             <p><a href="https://sylliegirlybeauty.vercel.app/" target="_blank">Live</a></p>
         </ProjectContainer>
         <ProjectContainer>
-            <a href="https://github.com/ebishiru/project-GROUP-e-commerce" target="_blank"><ProjectImg src="/my-portfolio/assets/ecommerce-picture.jpg" alt='Picture of Wear N Tech'/></a>
+            <a href="https://github.com/ebishiru/wearntech" target="_blank"><ProjectImg src="/my-portfolio/assets/ecommerce-picture.jpg" alt='Picture of Wear N Tech'/></a>
             <p>"Wear N Tech" <br/>(eCommerce Website)</p>
-            <p><a href="https://github.com/ebishiru/project-GROUP-e-commerce">Github</a></p>
+            <p><a href="https://github.com/ebishiru/wearntech">Github</a></p>
         </ProjectContainer>
         <ProjectContainer>
             <a href="https://github.com/ebishiru/project-js-nyan-cat" target="_blank"><ProjectImg src="/my-portfolio/assets/nyan-cat-picture.jpg" alt='Picture of the game "I CAN HAZ CHEEZBURGER?!??"'/></a>
