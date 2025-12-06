@@ -17,6 +17,12 @@ const Projects = () => {
         </IconContainer>
         <h2>Projects</h2>
         <ProjectContainer>
+            <a href="https://dungeonnotesdatabase.vercel.app/" target="_blank"><ProjectImg src="/my-portfolio/assets/dnd-db.jpg" alt="Picture of D.N.D Webpage"/></a>
+            <p>"Dungeon Notes Database" <br/>(MERN Full Stack Hobby Project)</p>
+            <p><a href="https://github.com/ebishiru/dnd-journal" target="_blank">Github</a></p>
+            <p><a href="https://dungeonnotesdatabase.vercel.app/" target="_blank">Live</a></p>
+        </ProjectContainer>
+        <ProjectContainer>
             <a href="https://sylliegirlybeauty.vercel.app/" target="_blank"><ProjectImg src="/my-portfolio/assets/syllie_girly_beauty_picture.jpg" alt="Picture of Syllie Girly Beauty Webpage"/></a>
             <p>"Syllie Girly Beauty" <br/>(MERN Full Stack Solo Webpage Project)</p>
             <p><a href="https://github.com/ebishiru/sylliegirlybeauty" target="_blank">Github</a></p>
